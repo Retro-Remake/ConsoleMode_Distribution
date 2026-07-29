@@ -1,0 +1,9 @@
+== 1.1.1
+First public release. What's new:
+
+- Redesigned CD player: scrolling track list, seek bar, and pause.
+- Menu OK and Menu Back are now mappable, and the mapper shows the exact
+  button or key you press.
+- Volume fix and a new mute toggle.
+- Keyboard remapping.
+- Automatic updates, with rollback if an update fails to boot.
