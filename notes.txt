@@ -1,3 +1,23 @@
+== 1.1.2
+What's new:
+
+- CRT mode: fixed the frame rate collapse and rolling black flicker that
+  appeared whenever overscan was set above 0%.
+- CRT overscan now trims the layout instead of scaling the picture, so it
+  stays sharp. Range is 0-5%.
+- CRT menu core: reworked video timing, which makes the signal much easier
+  to centre, plus a flicker filter for the interlaced modes.
+- Controller mapping: d-pads, Select/Start, and triggers now map correctly
+  on the pads that previously failed, and analog sticks can be mapped.
+- Mapping reads controller identity from MiSTer instead of overwriting its
+  map, so pads keep working in the OSD.
+- Hold Back for two seconds to leave the mapper if you start a capture by
+  mistake.
+- A/B swap is gamepad-only now: keyboard Enter and Escape stay put, and the
+  on-screen button prompts follow the swap.
+- System config updates for 0MHz DOS, Neon68K X68000, AmigaVision, and
+  Amiga CD32.
+
 == 1.1.1
 First public release. What's new:
 
