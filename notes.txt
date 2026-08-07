@@ -1,3 +1,42 @@
+== 1.1.3
+New in this release:
+
+- Cifs support.
+- Added new CRT modes: 480p, 576p, 640x480p.
+- Bundled configs- section inis + cacert.pem baked into the binary and installed/upgraded at boot. Edited inis aren't upgraded.
+- OTA is multi-file mode now.
+- BGM music with volume and Static/Dynamic modes. Add mp3s to ConsoleMode/Sounds/BGM.
+- User UI sounds for confirm, back, and nav. Add MP3s to ConsoleMode/Sounds/SystemSounds.
+- Virtual Boy system support.
+- Big NX View game style. Based on SS4-selected cover sizes. Great for 240p CRT.
+- Keyboard type-jump. Any letter or digit jumps the list to that key.
+- Custom background color in the 7th swatch via hex entry.
+- Add ability to edit MiSTer INI from CM + HDR toggle.
+- Boot to Load Game toggle.
+- Hide Categories toggles.
+- Center list option for list view.
+- Load Core changed into stock MiSTer Menu behavior.
+- Add / for search and + for favorites.
+- Report Bugs/Feedback QR screen.
+- names.txt support.
+- Hidden disc collapse. Folder with one visible cue launches into the game.
+- File-based romDirs.
+- Main-BG backdrop support for category and system views.
+- CD-i & 3DO list icons.
+- Game options show full filename.
+- Footer select label changed to SEL.
+
+Fixes
+
+- OTA could die on missing CA bundle.
+- Fix bug in main MiSTer video modes.
+- Hidden games would linger after being hidden.
+- SS4 section tiles stretched their icons instead of decoding at the new target size.
+- Alias-resolved titles skipped a () title filter (Neo-Geo).
+- Artwork optimizer re-processed already-optimized files, but didn't write them again, essentially wasting decode cycles.
+- Scraped art resolves for titles with dots in the name (v1.1 style).
+- RetroAchievements core override writes the ini section the core reads (TGFX16).
+
 == 1.1.2
 What's new:
 
