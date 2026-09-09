@@ -1,3 +1,16 @@
+== 1.1.4.1
+New in this release:
+
+- Neo Geo Pocket and Neo Geo Pocket Color launch on the official NGPC core. Games and both BIOS files go in games/NGPC.
+- Separate tiles and list logos for Neo Geo Pocket and Neo Geo Pocket Color.
+- The Music section is on by default.
+
+Fixes
+
+- Systems added by an update now show up on the next boot. Previously a new section entry stayed hidden until you cleared the cache, so upgraders never saw Ports or Neo Geo Pocket.
+- PICO-8 carts launch again.
+- The music library now says where music goes. Put .mp3, .flac or .wav in /media/fat/music.
+
 == 1.1.4
 New in this release:
 

@@ -1,3 +1,3 @@
-ConsoleMode_arm b9df03f0ffb5eed43537169d9fd255eb 9356920
-MiSTer_ConsoleMode bd33f3459e348fd39dfe9223d5a0b188 1281932
+ConsoleMode_arm c7f4741f4bd3c4e21a39b0adb447f36b 9422456
+MiSTer_ConsoleMode 06955f3338cf5ec53bc60cf074951cd3 1281932
 menu_ConsoleMode.rbf f3def6e3d4b1ec6a67e4bf0927c6a66c 2555504
