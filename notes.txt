@@ -1,3 +1,47 @@
+== 1.1.4
+New in this release:
+
+- Music Player. MP3, FLAC and WAV from SD, USB and network. Browse by folder or library.
+- Now Playing screen with visualiser, seek bar, transport controls and embedded cover art.
+- Music section on the main menu. The CD player moved here from Dev Tools.
+- Background Music and System Sounds submenus, Dynamic BGM, WAV for UI sound slots. Audio now lives under ConsoleMode/Sounds.
+- Ports section group. Duke3D, Quake, 3S-ARM, PICO-8 and Sonic Mania, with their own tiles and logos. Single-core systems launch straight from the system view.
+- PICO-8 carts show their own art, .p8.png directly and .p8 label decode.
+- Neo Geo Pocket and Neo Geo Pocket Color via the jtngpc core.
+- Category Icons setting with a new dark tile set, dark by default.
+- Boot To: Main Menu, Load Game, History or Favorites.
+- Time Zone picker. Browses the zoneinfo db, applies live and sets the system zone so FAT timestamps match.
+- Folder favorites for multi-disc games and collections.
+- Hide folders from the browser, same as hiding a game.
+- Per-pad Confirm/Back swap in the controller options menu.
+- Scrape media toggle: box art, backgrounds or both.
+- ScreenScraper scraping now works with a free ScreenScraper account. The developer id ships with Console Mode, so you only add your own ssid/sspassword.
+- Favorite stars show on search results.
+- Nested folder position inside a system is remembered across launches.
+- Core select shows a port's wrapper binary and whether the active ini sets it.
+- Category labels follow the section ini filename as typed.
+- Famicom-family and 11 more list logos, rename-proof lookup.
+- Atari 2600 lists .bin, 3DO accepts .iso, PSX2XCPU resolves as a PSX core.
+- WiFi Disconnect keeps the password. Wired networks get a header icon.
+- Writes /tmp/ACTIVEGAME at launch for Zaparoo-style trackers.
+- Rounded selection toggle. List view drops the backing card behind category tiles.
+
+Fixes
+
+- Music Section toggle had no handler, so it could never be turned off.
+- Music folders with case variants tripled the roots on case-insensitive mounts.
+- BGM started under the loading bar instead of after the first menu frame.
+- BGM kept playing when the selected source had nothing in it, and ran over Optimize Artwork.
+- Frontend didn't exit cleanly on shutdown, so a stale frame could stay onscreen.
+- Scraped media dropped dots from titles, and folder art didn't resolve under the folder's own name.
+- Scraper wrote to network media dirs without a working mkdir or copy fallback.
+- Scraper used a nonexistent Apple II thumbnail set and the wrong Atari 800 repo name.
+- RetroAchievements wrote the rbf stem instead of the core's CONF_STR ini section.
+- Pad face buttons ignored the input map when BTN_DPAD defaults were present.
+- Titles that are only a tag kept the wrong name, and .p8 shed one extension too few.
+- Settings cursor lost its place returning from a submenu.
+- Near-opaque art missed the fast blit path.
+
 == 1.1.3
 New in this release:
 
