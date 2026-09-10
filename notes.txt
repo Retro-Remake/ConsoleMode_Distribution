@@ -1,3 +1,9 @@
+== 1.1.4.2
+Fixes
+
+- CRT mode no longer leaves the framebuffer warning OSD on screen at boot.
+- CRT mode no longer repeats the picture across an HDMI display.
+
 == 1.1.4.1
 New in this release:
 
