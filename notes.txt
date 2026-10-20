@@ -1,3 +1,18 @@
+== 1.2
+New in this release:
+
+- Clean up display errors in 1080p mode during heavy scene transitions.
+- Faster browsing at 1080p. 
+- PS1 discs can be dumped to storage from a USB drive, with Redump verification.
+- Faster start-up and faster returns from a game.
+- Playtime: game lists show how long you have played the selected game and when you last played it. Turn it off in Settings > Display > Show Playtime.
+- PS1 SNAC pad On/Off in the OSD. Off frees the User port for MT32-pi.
+
+Fixes
+
+- Plugging in an HDMI display after boot no longer leaves the menu drawn at the wrong size.
+- /tmp/FULLPATH now uses the same format as stock MiSTer, so TTY2TFT and TTY2RPi artwork matches again.
+
 == 1.1.4.2
 Fixes
 
