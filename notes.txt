@@ -1,3 +1,8 @@
+== 1.2.2
+Fixes
+
+- Fix ScreenScraper.
+
 == 1.2.1
 Fixes
 

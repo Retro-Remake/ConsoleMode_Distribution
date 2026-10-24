@@ -1,4 +1,4 @@
-ConsoleMode_arm bd2deed630c5ebc29aaadd1f3416a0f6 10389780
+ConsoleMode_arm 8adac4f5c4e20fe40af7332e0d5b4193 10389780
 MiSTer_ConsoleMode 900327c5082e429266646985273ec49f 1286036
 menu_ConsoleMode.rbf 6737b4be8a7cac14f3db4f7f6d1c7360 2609524
 cdrdao a60e2b51a418228cd7ca7fb8ef26023d 3440096
