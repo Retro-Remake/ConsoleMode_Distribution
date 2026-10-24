@@ -1,3 +1,9 @@
+== 1.2.1
+Fixes
+
+- Fix disc backup OTA files.
+- Add error message to UI if disc tools are missing.
+
 == 1.2
 New in this release:
 
