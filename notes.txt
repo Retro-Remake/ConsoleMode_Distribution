@@ -1,3 +1,13 @@
+== 1.2.3
+New in this release
+
+- Console Mode themes: a theme can restyle every screen. Lower Third is included, pick it in Settings > Display > Theme.
+- A spinner in the header shows while MiSTer is still starting up in the background. Things run slower until it goes away.
+
+Fixes
+
+- A failed update download can be retried instead of getting stuck.
+
 == 1.2.2
 Fixes
 
