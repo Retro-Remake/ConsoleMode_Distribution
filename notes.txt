@@ -1,3 +1,19 @@
+== 1.2.4
+New in this release
+
+- PS1 disc dumps are checked against Redump track by track, CD audio included.
+- Pick the read speed for a PS1 dump. After a failed dump, Left/Right picks a slower speed for the retry.
+- Damaged error-correction bytes in a PS1 dump are rebuilt when the sector data checks out.
+- Direct video: with direct_video=1 the menu shows a 240p layout, like CRT mode.
+
+Fixes
+
+- PS1 dumps of discs with CD audio had static on the audio tracks. Verify Dump repairs older dumps.
+- Multi-track PS1 discs no longer report a false corrupt sector.
+- PS1 discs without a serial number no longer hang at "Checking for a disc".
+- An update could roll back to the previous version after a quick game launch.
+- Games on a CIFS share mounted at boot could be missing from the game list.
+
 == 1.2.3
 New in this release
 
