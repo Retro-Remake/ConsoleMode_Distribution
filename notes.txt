@@ -1,3 +1,37 @@
+== 1.2.5
+New in this release
+
+- L2, R2, L3 and R3 can be mapped in the controller settings and work in every core that uses them, like PSX and NeoGeo.
+- The Input Tester shows both analog sticks, L2/R2 and L3/R3.
+- Large folders open faster, their games are saved in the game database.
+- NFS network shares are picked up at boot like CIFS.
+- Systems you add to Arcade.ini show in the Arcade section.
+- The game database rebuilds once after this update.
+
+Fixes
+
+- Multi-disc game folders sort among the other games.
+- Entering a folder could show the previous folder's games.
+- With Background Artwork off, the system background was missing or wrong.
+- The folder path could overlap the item counter.
+- Returning from a game opened the Boot To screen instead of your folder.
+- Core overrides missed cores like NES-Sinden and CD-i.
+- Load Core could take minutes when a network share was mounted.
+- Names in alias.txt with / or \ were cut short.
+- The D-pad moves on press and repeats when held.
+- Bluetooth pads could keep disconnecting while reconnecting.
+- Background music could stutter.
+- A controller that reconnected quickly stopped responding.
+- A menu button set in Console Mode only worked together with the old one.
+- The Input Tester could not be closed when its controller was unplugged.
+- The OSD showed the wrong INI profile and Main could not be picked again.
+- The OSD lagged with some controllers.
+- A lower Console Mode resolution was boxed instead of filling the screen.
+- The UI lost its resolution when the TV was turned off and on.
+- /tmp/FULLPATH and CURRENTPATH match stock MiSTer, arcade games write them too.
+- System logos were missing in list view for systems renamed in names.txt.
+- CRT mode at 480p was slow.
+
 == 1.2.4
 New in this release
 
