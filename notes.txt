@@ -1,3 +1,52 @@
+== 2.0-RC-1
+Release candidate 1 for Console Mode 2.0. More release candidates will follow before 2.0.
+
+New in this release
+
+- Play PS1 discs straight from a USB CD drive. On the PS1 Disc screen, press Up to play the disc in the drive. It uses the official PSX core.
+- Disc swaps work for multi-disc games: open the drive, change the disc and close it. Audio CDs play in the PSX BIOS player and in games that use them.
+- LibCrypt discs are covered by sbi.zip, the same as disc images.
+- All discs of a multi-disc game share one folder and one memory card.
+- A dumped disc shows up in the game list right away, without rebuilding the game database.
+- New boot screen with the Retro Remake logo. The version number moved from the header to the boot screen.
+- Kiosk Mode (Settings > System) hides Load Core and Settings, blocks game options and deleting, and locks the OSD. Hold L1 + R1 for 5 seconds on the main menu to turn it off, or set kioskMode=false in ConsoleMode/config.ini.
+- Screensaver (Settings > Display) with Flying and Fade styles.
+- Newly Added on the main menu (Developer Tools > Menu Content). Press X twice in the list to clear it.
+- Scripts on the main menu (Developer Tools > Menu Content).
+- Memory Cards (Media > Memory Cards): browse PS1 memory card images and their saves, copy saves between cards, and import or export them. The memory card manager is f3bandit's idea and design.
+- Play Log (Media > Play Log): play time by game, by system and recently played. Games picked from a core's OSD are counted too.
+- Options > View Artwork shows a game's box art and background full screen.
+- Scrape Art (Search by Name) in a game's Options, for games the scraper can't match on its own.
+- Artwork Location (Game Library) can keep scraped art on the SD card instead of next to the games.
+- Rebuild When Games Change (Game Library) rebuilds the game database at boot when games were added or removed.
+- Favorites View (Game Library) can group favorites by system.
+- Cold Boot can start the last game you played. Return To picks where you land after quitting a game.
+- Menu Button Hold (Settings > Input) sets what holding the Menu button does in a game: Bluetooth pairing, return to Console Mode, reset the game or reboot.
+- L1/R1 Jump (Settings > Input) can jump by first letter instead of by page.
+- Disable Dock IR Remote (Settings > Input).
+- Button Labels > Position draws the A/B/X/Y hints as a button diamond.
+- BGM Level Matching evens out the loudness of background music tracks. BGM > Show Track Name shows each new track's name.
+- Display: HDMI Rotation for portrait screens (based on work by t-chamb), Background Fit, List View Background and Static Wallpaper (ConsoleMode/wallpaper.png).
+- The list main menu shows the Resume Game box art and play time.
+- Show Core Dates and an Extra Cores label in Load Core.
+- names.txt renames come with regional art, for example PC Engine, Famicom, Super Famicom and Mega CD.
+- Folder art: a folder shows the art of the game inside it.
+- The game database rebuilds once after this update.
+
+Fixes
+
+- Cold Boot > Main Menu now opens the main menu.
+- Games split into one folder per disc show as a single game.
+- A game revision without its own art, like (Rev 2), uses the art of the same release.
+- Game folders get the full Options menu, including Scrape Art and Core Override.
+- Newly Added titles follow Title Filtering.
+- Alias names show in grid and themed views. romsets.xml names take priority over alias.txt.
+- Systems that borrow another core (GBC, Genesis) use its newest plain build, not a RetroAchievements or lightgun build.
+- The M30 controller's R1 works in menus.
+- Arduino-based adapters like DaemonBite load their OSD mapping.
+- History art was missing after a cold boot when games are on a drive that mounts late.
+- The clock shows the last known time instead of 1970 on systems without an RTC battery.
+
 == 1.2.5
 New in this release
 
